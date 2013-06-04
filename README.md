@@ -1,4 +1,5 @@
-phonegap-nfc-test
+# phonegap-nfc-test
+Some sanity ridden code to help get phonegap-nfc running with cordova cli.
 
 ## Installation
 1) Change SDK path in local.properties
