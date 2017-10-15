@@ -1,80 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Hello Cordova</name>
+<widget id="org.devgeeks.nfc" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>nfc</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="callback-dev@incubator.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
-    <feature name="App">
-        <param name="android-package" value="org.apache.cordova.App" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="android-package" value="org.apache.cordova.GeoBroker" />
-    </feature>
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.Device" />
-    </feature>
-    <feature name="Accelerometer">
-        <param name="android-package" value="org.apache.cordova.AccelListener" />
-    </feature>
-    <feature name="Compass">
-        <param name="android-package" value="org.apache.cordova.CompassListener" />
-    </feature>
-    <feature name="Media">
-        <param name="android-package" value="org.apache.cordova.AudioHandler" />
-    </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.CameraLauncher" />
-    </feature>
-    <feature name="Contacts">
-        <param name="android-package" value="org.apache.cordova.ContactManager" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.FileUtils" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.NetworkManager" />
-    </feature>
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.Notification" />
-    </feature>
-    <feature name="Storage">
-        <param name="android-package" value="org.apache.cordova.Storage" />
-    </feature>
-    <feature name="FileTransfer">
-        <param name="android-package" value="org.apache.cordova.FileTransfer" />
-    </feature>
-    <feature name="Capture">
-        <param name="android-package" value="org.apache.cordova.Capture" />
-    </feature>
-    <feature name="Battery">
-        <param name="android-package" value="org.apache.cordova.BatteryListener" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.SplashScreen" />
-    </feature>
-    <feature name="Echo">
-        <param name="android-package" value="org.apache.cordova.Echo" />
-    </feature>
-    <feature name="Globalization">
-        <param name="android-package" value="org.apache.cordova.Globalization" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.InAppBrowser" />
-    </feature>
-    <plugins>
-    </plugins>
-    <feature name="NfcPlugin">
-        <param name="android-package" value="com.chariotsolutions.nfc.plugin.NfcPlugin" />
-    </feature>
+    <icon height="512" src="res/icon/cordova_512.png" width="512" />
+    <icon gap:platform="android" height="96" src="res/icon/cordova.png" width="96" />
+    <icon gap:platform="blackberry" height="80" src="res/icon/cordova_bb_80.png" width="80" />
+    <icon gap:platform="ios" height="144" src="res/icon/cordova_ios_144.png" width="144" />
+    <gap:splash gap:platform="android" height="480" src="res/screen/android_hdpi_landscape.png" width="800" />
+    <gap:splash gap:platform="android" height="800" src="res/screen/android_hdpi_portrait.png" width="480" />
+    <gap:splash gap:platform="android" height="200" src="res/screen/android_ldpi_landscape.png" width="320" />
+    <gap:splash gap:platform="android" height="320" src="res/screen/android_ldpi_portrait.png" width="200" />
+    <gap:splash gap:platform="android" height="320" src="res/screen/android_mdpi_landscape.png" width="480" />
+    <gap:splash gap:platform="android" height="480" src="res/screen/android_mdpi_portrait.png" width="320" />
+    <gap:splash gap:platform="android" height="720" src="res/screen/android_xhdpi_landscape.png" width="1280" />
+    <gap:splash gap:platform="android" height="1280" src="res/screen/android_xhdpi_portrait.png" width="720" />
+    <gap:splash gap:platform="blackberry" height="300" src="res/screen/blackberry_transparent_300.png" width="300" />
+    <gap:splash gap:platform="blackberry" height="200" src="res/screen/blackberry_transparent_400.png" width="200" />
+    <gap:splash gap:platform="ios" height="748" src="res/screen/ipad_landscape.png" width="1024" />
+    <gap:splash gap:platform="ios" height="1004" src="res/screen/ipad_portrait.png" width="768" />
+    <gap:splash gap:platform="ios" height="1496" src="res/screen/ipad_retina_landscape.png" width="2048" />
+    <gap:splash gap:platform="ios" height="2008" src="res/screen/ipad_retina_portrait.png" width="1536" />
+    <gap:splash gap:platform="ios" height="320" src="res/screen/iphone_landscape.png" width="480" />
+    <gap:splash gap:platform="ios" height="480" src="res/screen/iphone_portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="640" src="res/screen/iphone_retina_landscape.png" width="960" />
+    <gap:splash gap:platform="ios" height="960" src="res/screen/iphone_retina_portrait.png" width="640" />
+    <gap:splash gap:platform="winphone" height="800" src="res/screen/windows_phone_portrait.jpg" width="480" />
     <access origin="*" />
-    <preference name="useBrowserHistory" value="true" />
-    <preference name="exit-on-suspend" value="false" />
+    <preference name="loglevel" value="DEBUG" />
     <preference name="phonegap-version" value="1.9.0" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
+    <feature name="NfcPlugin">
+        <param name="android-package"
+         value="com.chariotsolutions.nfc.plugin.NfcPlugin" />
+    </feature>
 </widget>
